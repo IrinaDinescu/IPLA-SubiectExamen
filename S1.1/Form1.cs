@@ -7,48 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
-using Microsoft.Office.Tools.Ribbon;
-using Excel = Microsoft.Office.Interop.Excel;
 
-namespace SubExamen2021
+namespace SubiectExamen
 {
     public partial class Form1 : Form
-        
     {
-        Excel.Worksheet currentSheet = null;
-        public Form1()
+        int indicator_1;
+        float indicator_2;
+        Ribbon1 r;
+        public Form1(int _indicator_1, float _indicator_2, Ribbon1 ribbon)
         {
             InitializeComponent();
-            if (Globals.ThisAddIn.Application.ActiveSheet != null)
-            {
-                currentSheet = Globals.ThisAddIn.Application.ActiveSheet;
-                currentSheet.SelectionChange += CurrentSheet_SelectionChange;
-            }
+            this.indicator_1 = _indicator_1;
+            this.indicator_2 = _indicator_2;
+            this.r = ribbon;
 
-            Globals.ThisAddIn.Application.SheetActivate += (sh) =>
-            {
-                currentSheet = sh as Excel.Worksheet;
-                currentSheet.SelectionChange += CurrentSheet_SelectionChange;
-            };
+            this.textBox1.Text = indicator_1.ToString();
+            this.textBox2.Text = indicator_2.ToString();
 
-            Globals.ThisAddIn.Application.SheetDeactivate += (sh) =>
-            {
-                if (currentSheet != null)
-                {
-                    currentSheet.SelectionChange -= CurrentSheet_SelectionChange;
-                }
-            };
+
+            //subscriere la eveniment
+            r.indicatoriActualizati += new Ribbon1.actualizareIndicator(functie_pe_eveniment);
         }
-        private void CurrentSheet_SelectionChange(Excel.Range range)
+
+        private void label1_Click(object sender, EventArgs e)
         {
+          
+        }
 
-            Excel.Range selection = Globals.ThisAddIn.Application.Selection as Excel.Range;
-
-            currentSheet.Cells[3, 5].Formula = "=Sum(" + selection.Address + ")";
-            currentSheet.Cells[3, 6].Formula = "=AVERAGE(" + selection.Address + ")";
-
-            textBox1.Text = currentSheet.Cells[3, 5].Value2 + ",    " + currentSheet.Cells[3, 6].Value2;
+        private void functie_pe_eveniment(int i1, float i2)
+        {
+            this.textBox1.Text = i1.ToString();
+            this.textBox2.Text = i2.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
