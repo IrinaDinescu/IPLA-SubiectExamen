@@ -1,0 +1,11 @@
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\bin\Debug\SubiectExamen_EX2.exe.config
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\bin\Debug\SubiectExamen_EX2.exe
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\bin\Debug\SubiectExamen_EX2.pdb
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.csprojAssemblyReference.cache
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.Form1.resources
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.Properties.Resources.resources
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.csproj.GenerateResource.cache
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.csproj.CoreCompileInputs.cache
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.exe
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.pdb
+C:\Irina\Facultate\Master\An I\Sem I\IPLA\EU\SubiectExamen_EX2\SubiectExamen_EX2\obj\Debug\SubiectExamen_EX2.Form2.resources
